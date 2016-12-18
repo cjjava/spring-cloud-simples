@@ -21,5 +21,16 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<modules>
+		<module>cloud-config-server</module>
+	</modules>
 </project>
