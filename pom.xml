@@ -32,5 +32,6 @@
 	
 	<modules>
 		<module>cloud-config-server</module>
+		<module>cloud-simple-service</module>
 	</modules>
 </project>
