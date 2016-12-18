@@ -1,2 +1,5 @@
 /.settings
 /.project
+/cloud-config-server/.settings
+/cloud-config-server/.project
+/cloud-config-server/.classpath
