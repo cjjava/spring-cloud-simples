@@ -33,5 +33,6 @@
 	<modules>
 		<module>cloud-config-server</module>
 		<module>cloud-simple-service</module>
+		<module>cloud-eureka-server</module>
 	</modules>
 </project>
