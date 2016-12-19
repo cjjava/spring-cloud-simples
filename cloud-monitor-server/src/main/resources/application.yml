@@ -1,0 +1,17 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: cloud-monitor-server
+    
+endpoints:
+  health:
+    sensitive: false
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  
+      
+#manager url:http://localhost:8050/
