@@ -36,6 +36,7 @@ public class UserController {
         User user = new User();
         user.setId("1");
         user.setUsername("fallback user");
+        fallback.add(user);
         return fallback;
     }
 }

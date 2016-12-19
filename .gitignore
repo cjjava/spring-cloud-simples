@@ -9,3 +9,12 @@
 /cloud-eureka-server/.settings
 /cloud-eureka-server/.classpath
 /cloud-eureka-server/.project
+/cloud-simple-ui/.settings
+/cloud-simple-ui/.project
+/cloud-simple-ui/.classpath
+/cloud-monitor-server/.settings
+/cloud-monitor-server/.classpath
+/cloud-monitor-server/.project
+/cloud-hystrix-dashboard/.settings
+/cloud-hystrix-dashboard/.classpath
+/cloud-hystrix-dashboard/.project

@@ -34,5 +34,8 @@
 		<module>cloud-config-server</module>
 		<module>cloud-simple-service</module>
 		<module>cloud-eureka-server</module>
+		<module>cloud-simple-ui</module>
+		<module>cloud-hystrix-dashboard</module>
+		<module>cloud-monitor-server</module>
 	</modules>
 </project>
