@@ -37,5 +37,6 @@
 		<module>cloud-simple-ui</module>
 		<module>cloud-hystrix-dashboard</module>
 		<module>cloud-monitor-server</module>
+		<module>cloud-hystrix-turbine</module>
 	</modules>
 </project>

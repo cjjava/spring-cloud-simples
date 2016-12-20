@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: turbine
+    name: cloud-simple-turbine
   cloud:
     config:
       enabled: true
