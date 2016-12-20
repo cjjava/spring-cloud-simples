@@ -24,7 +24,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
-	@HystrixCommand(commandKey = "searchAllCommand", groupKey = "userGroup", fallbackMethod = "fallBackCall")
+	@HystrixCommand(fallbackMethod = "fallBackCall")
 	@RequestMapping(value="/users")
 	public List<User> readUserInfo(){
 		return userService.searchAll();		
