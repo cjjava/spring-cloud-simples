@@ -6,18 +6,20 @@ spring:
     name: cloud-simple-turbine
   cloud:
     config:
-      enabled: true
-      uri: http://localhost:8888
+      discovery:
+        enabled: false
 
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 10
+    nonSecurePort: ${server.port:8989}
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
 
 turbine:
   aggregator:
     clusterConfig: CLOUD-SIMPLE-UI
   appConfig: cloud-simple-ui
-  clusterNameExpression: metadata['cluster']
+
+logging:
+  level: INFO

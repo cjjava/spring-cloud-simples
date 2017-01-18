@@ -1,12 +1,16 @@
-#service discovery url
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-#service name
+#service name    
 spring:
   application:
     name: cloud-simple-ui
+#service discovery url
+  cloud:
+    config:
+      discovery:
+        enabled: true
 
-server:
-  port: 8090
+eureka:
+  instance:
+    nonSecurePort: ${server.port:8090}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
