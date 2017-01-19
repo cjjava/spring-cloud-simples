@@ -1,0 +1,16 @@
+#service name    
+spring:
+  application:
+    name: hystrix-dashboard
+#service discovery url
+  cloud:
+    config:
+      discovery:
+        enabled: false
+
+eureka:
+  instance:
+    nonSecurePort: ${server.port:8022}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
