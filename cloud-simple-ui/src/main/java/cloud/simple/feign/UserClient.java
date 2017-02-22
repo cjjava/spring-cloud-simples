@@ -15,7 +15,7 @@ import cloud.simple.domain.User;
  * @version 1.0 
  */
 @FeignClient("simple-service")
-public interface UserService {
+public interface UserClient {
   @RequestMapping(method = RequestMethod.GET, value = "/users",
   produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	List<User> searchAll();
