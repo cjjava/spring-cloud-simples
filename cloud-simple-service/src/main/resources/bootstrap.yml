@@ -6,11 +6,3 @@ spring:
       profile: ${spring.profiles.active:development}
       discovery:
         enabled: true
-
-#service discovery url
-eureka:
-  instance:
-    nonSecurePort: ${server.port:8081}
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
