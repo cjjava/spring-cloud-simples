@@ -1,0 +1,13 @@
+---
+spring:
+  profiles: development
+  jpa:
+    show_sql: true
+server:
+  port: 8082
+eureka:
+  instance:
+    nonSecurePort:  ${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/

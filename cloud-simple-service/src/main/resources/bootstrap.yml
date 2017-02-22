@@ -1,10 +1,9 @@
 spring:
   application:
-    name: cloud-simple-service
+    name: simple-service
   cloud:
     config:
-      name: simple-service
-      profile: ${config.profile:dev}
+      profile: ${spring.profiles.active:development}
       discovery:
         enabled: true
 

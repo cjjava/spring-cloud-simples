@@ -14,7 +14,7 @@ import cloud.simple.domain.User;
  * @date 2016年12月19日 下午2:08:26 
  * @version 1.0 
  */
-@FeignClient("cloud-simple-service")
+@FeignClient("simple-service")
 public interface UserService {
   @RequestMapping(method = RequestMethod.GET, value = "/users",
   produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
