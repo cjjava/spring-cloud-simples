@@ -1,7 +1,7 @@
 #service name    
 spring:
   application:
-    name: simple-ui
+    name: ui
 #service discovery url
   cloud:
     config:

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: simple-service
+    name: simple
   cloud:
     config: 
       discovery:
