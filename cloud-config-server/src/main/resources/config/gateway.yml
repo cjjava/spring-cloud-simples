@@ -2,7 +2,4 @@ logging:
   file: logs/gateway.log
   org.springframework.cloud.netflix:
     zuul: DEBUG
-          
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+

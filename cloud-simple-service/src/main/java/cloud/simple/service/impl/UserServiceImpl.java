@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> searchAll() {
 		try {
-			Thread.sleep(1000);//模拟耗时操作
+			Thread.sleep(10000);//模拟耗时操作
 		} catch (Exception e) {
 			//e.printStackTrace();
 		}
