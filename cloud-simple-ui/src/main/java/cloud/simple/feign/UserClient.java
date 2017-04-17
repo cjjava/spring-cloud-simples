@@ -3,7 +3,6 @@ package cloud.simple.feign;
 import java.util.List;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,7 +15,6 @@ import cloud.simple.domain.User;
  */
 @FeignClient("simple-service")
 public interface UserClient {
-  @RequestMapping(method = RequestMethod.GET, value = "/users",
-  produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+  @RequestMapping(method = RequestMethod.GET, value = "/users")
 	List<User> searchAll();
 }
