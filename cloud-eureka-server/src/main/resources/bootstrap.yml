@@ -8,6 +8,3 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-      
-logging:
-  file: logs/eureka.log
