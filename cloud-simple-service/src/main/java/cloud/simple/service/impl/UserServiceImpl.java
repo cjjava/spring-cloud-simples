@@ -18,6 +18,11 @@ public class UserServiceImpl implements UserService {
 	@Transactional(readOnly=true)
 	@Override
 	public List<User> searchAll() {
+		try {
+			Thread.sleep(1000);//模拟耗时操作
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
 		return userRepository.findAll();
 	}
 

@@ -1,0 +1,4 @@
+logging:
+  file: logs/gateway.log
+  org.springframework.cloud.netflix:
+    zuul: DEBUG

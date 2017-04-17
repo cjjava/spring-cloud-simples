@@ -1,3 +1,17 @@
 spring:
   application:
     name: eureka-server
+    
+server: 
+  port: 8761
+eureka:
+  environment: dev
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${server.port}/eureka/
+      
+logging:
+  file: logs/eureka.log
+  

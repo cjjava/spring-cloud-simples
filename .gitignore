@@ -21,3 +21,6 @@
 /cloud-hystrix-turbine/.settings
 /cloud-hystrix-turbine/.classpath
 /cloud-hystrix-turbine/.project
+/cloud-gateway/.classpath
+/cloud-gateway/.project
+/cloud-gateway/.settings

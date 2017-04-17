@@ -1,20 +1,16 @@
+server: 
+  port: 8888
 spring: 
   application:
     name: configserver
   profiles:
-############以下配置是读取项目的config作为配置仓库#########
     active: native
-############以下配置是读取git作为配置仓库################
-  #cloud:
-    #config:
-      #server:
-        #git:
-        #  uri: https://github.com/cjjava/spring-cloud-simples.git
-        #  searchPaths: cloud-config-repo
-################################################
-eureka:
+eureka: 
   instance:
-    nonSecurePort: ${server.port:8888}
+    nonSecurePort: ${server.port}
   client:
     serviceUrl:
       defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+
+logging:
+  file: logs/config.log
