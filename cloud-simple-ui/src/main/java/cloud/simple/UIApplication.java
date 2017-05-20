@@ -11,6 +11,7 @@ import org.springframework.cloud.netflix.feign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
 
 import feign.codec.Encoder;
+import feign.form.FormEncoder;
 import feign.form.spring.SpringFormEncoder;
 
 /** 
@@ -32,7 +33,9 @@ public class UIApplication {
 	
 	@Bean
 	public Encoder encoder(){
-		return new SpringFormEncoder(new SpringEncoder(messageConverters));
+		//return new SpringFormEncoder(new SpringEncoder(messageConverters));
+		//return new FormEncoder(new SpringEncoder(messageConverters));
+		return new SpringFormEncoder(new FormEncoder(new SpringEncoder(messageConverters)));
 	}
 	
 }

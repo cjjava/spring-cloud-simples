@@ -1,5 +1,9 @@
 package cloud.simple.controller;
 
+import java.io.File;
+import java.util.Collections;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -26,7 +30,9 @@ public class FileUploadController {
 	//第二种方式,传普通文件对象给对方
 	@RequestMapping("/fileUpload")
 	public ResponseEntity<String> upload() {
-		
+		File file = new File("a.jpg");
+		Map<String, ?> data = Collections.singletonMap("file", file);
+		fileUploadClient.upload("chenjun", data);
 		return ResponseEntity.ok("upload ok");
 	}
 	
