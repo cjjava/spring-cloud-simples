@@ -13,7 +13,7 @@ import cloud.simple.domain.User;
  * @date 2016年12月19日 下午2:08:26 
  * @version 1.0 
  */
-@FeignClient("simple-service")
+@FeignClient("simple")
 public interface UserClient {
   @RequestMapping(method = RequestMethod.GET, value = "/users")
 	List<User> searchAll();
